@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.landing-main{
+    height: 110vh;
+    background-image: url("images/3d-geometric-abstract-background 1.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.landing-main h1{
+    margin: 0;
+    margin-left: 4vw;
+    padding: 12vh 12vh 3vh 12vh;
+    font-size: 5rem;
+    color: #212121;
+}
+.landing-main a{
+    padding: 2vh;
+    margin: 0;
+    margin-left: calc(12vh + 4vw);
+    color: #fff;
+    background-color:#376FFF;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 200ms;
+}
+.landing-main a:hover{
+    padding: calc(2vh + 0.5vh);
+    background-color: #4f82ff;
+    transition: 200ms;
+}
+.landing-main div{
+    padding-top: 20vh;
+}
+
+
+.landing-why-us{
+    height: 100vh;
+}
+
+.landing-why-us h2{
+    color: #376FFF;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 10vh;
+}
+
+.landing-why-us h1{
+    width: 50vw;
+    color: #212121;
+    font-size: 4rem;
+    font-weight: bolder;
+    margin: 0;
+}
+.landing-why-us h2,.landing-why-us h1{
+    margin-left: 10vw;
+}
+.landing-why-us-content{
+    display: flex;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.why-us-left, .why-us-right{
+    width: 50%;
+}
+.why-us-left{
+    padding-top: 10vh;
+}
+.why-us-right img{
+    width: 40vw;
+}
+.why-us-point{
+    display: flex;
+    padding: 1vh;
+    font-weight: 400;
+}
+.why-us-point img{
+    width: 3vh;
+    height: 3vh;
+    padding: 2vh;
+}
+.why-us-point span{
+    color: #376FFF;
+    font-weight: bolder;
+}
+
+
+.landing-contact{
+    height: 150vh;
+    background-image: url("images/monochromatic-urban-minimal-landscape 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.landing-contact h2{
+    text-align: center;
+    color: #376FFF;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 20vh;
+}
+
+.landing-contact >  h1{
+    text-align: center;
+    color: #212121;
+    font-size: 4rem;
+    font-weight: bolder;
+    margin: 0;
+}
+.landing-form{
+    color: #212121;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10vh;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.landing-form h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+.landing-form h3{
+    margin: 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.landing-form input, .landing-form select{
+    width: 10vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
