@@ -5,14 +5,74 @@
     <title>Home</title>
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <nav>
-
+    <div class="navbar">
+        <h3>MONTAGESERVICE E&M</h3>
+        <img id="burgerMenu" src="images/burger_menu.png" onclick="toggleMenu()">
+        <ul id="navbarUl">
+            <a href="index.html">
+                <li>Products</li>
+            </a>
+            <a href="about.html">
+                <li>Projects & Designs</li>
+            </a>
+            <a href="contact.html">
+                <li>Sustainability</li>
+            </a>
+            <a href="contact.html">
+                <li>About Us</li>
+            </a>
+            <a href="contact.html" id="navButton">
+                <li>Build with us &#10140;</li>
+            </a>
+        </ul>
+    </div>
 </nav>
-<div class="landing-main">
 
+<div class="smallNavbar">
+    <ul>
+        <a href="index.html">
+            <li>Products</li>
+        </a>
+        <a href="about.html">
+            <li>Projects & Designs</li>
+        </a>
+        <a href="contact.html">
+            <li>Sustainability</li>
+        </a>
+        <a href="contact.html">
+            <li>About Us</li>
+        </a>
+        <a href="contact.html" id="navButton">
+            <li>Build with us &#10140;</li>
+        </a>
+    </ul>
+</div>
+
+<script>
+    const smallNavbar = document.querySelector(".smallNavbar");
+    const burgerMenu = document.querySelector("#burgerMenu");
+
+    const toggleMenu = () =>{
+        if(smallNavbar.style.display === "none" || smallNavbar.style.display === ""){
+            smallNavbar.style.display = "flex";
+        }else{
+            smallNavbar.style.display = "none";
+        }
+    }
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            smallNavbar.style.display = "none";
+        }
+    });
+</script>
+
+<div class="landing-main">
     <div>
         <h1>
             Build beautiful, <br>
@@ -20,8 +80,6 @@
         </h1>
         <a href="#why-us">Learn More</a>
     </div>
-
-
 </div>
 
 <i id="why-us"></i>
@@ -51,6 +109,16 @@
     </div>
 </div>
 
+<div class="landing-projects">
+
+
+
+
+</div>
+
+
+
+
 <div class="landing-contact">
     <h2>CONTACT DETAILS</h2>
     <h1>HOW CAN WE <br>HELP YOU?</h1>
@@ -58,15 +126,16 @@
         <form action="">
             <h1>Make an appointment</h1>
             <h3>Leave your information here and get a reply from our expert in 24 hours, don't hesitate to ask.</h3>
-            <input type="text" name="name" placeholder="Full Name">
-            <input type="email" name="email" id="" placeholder="Email">
-            <select>
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" id="" placeholder="Email" required>
+            <select name="subject" required>
+                <option disabled selected>Pick a reason</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
             </select>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="submit-btn">
         </form>
     </div>
 

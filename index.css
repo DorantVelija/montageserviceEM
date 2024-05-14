@@ -16,7 +16,9 @@
     font-size: 5rem;
     color: #212121;
 }
+
 .landing-main a{
+    font-family: "Ubuntu", sans-serif;
     padding: 2vh;
     margin: 0;
     margin-left: calc(12vh + 4vw);
@@ -24,7 +26,7 @@
     background-color:#376FFF;
     border-radius: 10px;
     border-bottom-right-radius: 0;
-    font-family: "Ubuntu", sans-serif;
+    font-size: 1.4rem;
     font-weight: 500;
     text-decoration: none;
     transition: 200ms;
@@ -43,7 +45,7 @@
     height: 100vh;
     animation: keyPointScroll 2s;
     animation-timeline: scroll();
-    animation-range-end: 50%;
+    animation-range-end: 25%;
 }
 
 .landing-why-us h2{
@@ -96,10 +98,22 @@
 }
 
 
+.landing-projects{
+    height: 300vh;
+    background-color: #212121;
+}
+
+
+
+
+
+
+
 .landing-contact{
     height: 150vh;
     background-image: url("images/monochromatic-urban-minimal-landscape 1.png");
     background-size: cover;
+    background-position: 0 00px;
     background-repeat: no-repeat;
 }
 .landing-contact h2{
@@ -126,7 +140,7 @@
     margin-right: auto;
     padding: 10vh;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(234, 234, 234, 0.94);
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
@@ -142,13 +156,29 @@
     font-size: 0.8rem;
 }
 .landing-form input, .landing-form select{
-    width: 10vw;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     border: none;
+    margin-top: 10px;
+    marginbottom: 10px;
+}
+::placeholder{
+    color: #212121;
+}
+#submit-btn{
+    background-color: #376FFF;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 200ms;
+}
+#submit-btn:hover{
+    transition: 200ms;
+    cursor: pointer;
+    scale: 1.01;
 }
 
 
@@ -157,10 +187,10 @@
 @keyframes onLoad {
     from {
         opacity: 0;
-        transform: translateY(-10%);
+      /*  transform: translateY(-10%);*/
     }
     to {
-        transform: translateY(0);
+       /* transform: translateY(0);*/
         opacity: 1;
     }
 }
