@@ -9,6 +9,20 @@
     height: 4rem;
     width: 100vw;
     z-index: 200;
+    background-color: rgba(255, 255, 255, 0);
+    animation: changeNavColor;
+    animation-timeline: scroll();
+}
+@keyframes changeNavColor {
+    0%{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    20% {
+        background-color: rgba(255, 255, 255, 100);
+    }
+    100%{
+        background-color: rgba(255, 255, 255, 100);
+    }
 }
 
 #navbarUl li{
