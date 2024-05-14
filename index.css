@@ -204,3 +204,35 @@
         transform: translateX(0);
     }
 }
+
+@media (max-width: 768px){
+    .landing-main h1{
+        text-align: center;
+        padding: 2vh 0;
+        font-size: 3rem;
+    }
+    .landing-main a{
+        text-align: center;
+    }
+    .landing-why-us{
+        height: auto;
+    }
+    .landing-why-us-content{
+        flex-direction: column;
+    }
+    .why-us-right, .why-us-left{
+        width: 100%;
+    }
+    .why-us-right{
+        text-align: center;
+    }
+    .why-us-right img{
+        width: 100%;
+    }
+    .landing-why-us h1{
+        font-size: 2rem;
+    }
+    .landing-contact h1{
+        font-size: 2rem;
+    }
+}
