@@ -47,6 +47,11 @@
     animation-timeline: scroll();
     animation-range-end: 25%;
 }
+@media (max-height: 646px){
+    .landing-why-us{
+        height: 100%;
+    }
+}
 
 .landing-why-us h2{
     color: #376FFF;

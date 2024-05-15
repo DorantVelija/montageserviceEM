@@ -53,19 +53,19 @@
     margin-top: 50px;
     z-index: 200;
     display: none;
-    background-color: #376FFF;
+    background-color: #ffffff;
     width: 100%;
 }
 
 .smallNavbar ul{
     list-style-type: none;
-    background-color: #376FFF;
+    background-color: #ffffff;
     width: 100%;
 }
 
 .smallNavbar ul li{
     /* border-bottom: 1px solid white; */
-    color: white;
+    color: #000;
     font-size: 1.2rem;
     margin-right: 50px;
     margin-top: 1em;
@@ -102,8 +102,14 @@ a{
     position: fixed;
 }
 
+@media (max-width: 1260px){
+    #navbarUl li{
+        font-size: 0.8rem;
+        padding: .3em;
+        margin-right: 0px;
+    }
+}
 @media (max-width: 768px) {
-
     .navbar{
         flex-direction: row;
         align-items: center;
@@ -112,15 +118,12 @@ a{
         animation: none;
         background-color: rgba(255, 255, 255, 100);
     }
-
     .navbar h3{
         display: none;
     }
-
     #navbarUl li{
         display: none;
     }
-
     #burgerMenu{
         display: inline-block;
         width: 2rem;
@@ -134,5 +137,4 @@ a{
     #navButton li{
         padding-left: 10px;
     }
-
 }
