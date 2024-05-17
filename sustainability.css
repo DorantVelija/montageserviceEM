@@ -14,6 +14,30 @@
     width: 60vw;
 }
 .sus-landing{
+    animation: onLoad 2s;
+}
+
+@keyframes onLoad {
+    from {
+        opacity: 0;
+        /*  transform: translateY(-10%);*/
+    }
+    to {
+        /* transform: translateY(0);*/
+        opacity: 1;
+    }
+}
+@keyframes h1Scroll {
+    from {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.sus-landing{
     background-image: url("images/modern-styled-small-entryway.jpg");
     background-position: center;
     background-size: cover;
