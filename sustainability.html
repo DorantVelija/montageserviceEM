@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sustainability</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="sustainability.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<nav>
+    <div class="navbar" style="background-color: #ffffff; animation: none">
+        <h3>MONTAGESERVICE E&M</h3>
+        <img id="burgerMenu" src="images/burger_menu.png" onclick="toggleMenu()">
+        <ul id="navbarUl">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="index.html#landing-projects">
+                <li>Projects & Designs</li>
+            </a>
+            <a href="sustainability.html">
+                <li>Sustainability</li>
+            </a>
+            <a href="aboutus.html">
+                <li>About Us</li>
+            </a>
+            <a href="index.html#contact-form" id="navButton">
+                <li>Build with us &#10140;</li>
+            </a>
+        </ul>
+    </div>
+</nav>
+
+<div class="smallNavbar">
+    <ul>
+        <a href="index.html">
+            <li>Home</li>
+        </a>
+        <a href="index.html#landing-projects">
+            <li>Projects & Designs</li>
+        </a>
+        <a href="contact.html">
+            <li>Sustainability</li>
+        </a>
+        <a href="contact.html">
+            <li>About Us</li>
+        </a>
+        <a href="index.html#contact-form" id="navButton">
+            <li>Build with us &#10140;</li>
+        </a>
+    </ul>
+</div>
+
+<script>
+    const smallNavbar = document.querySelector(".smallNavbar");
+    const burgerMenu = document.querySelector("#burgerMenu");
+
+    const toggleMenu = () =>{
+        if(smallNavbar.style.display === "none" || smallNavbar.style.display === ""){
+            smallNavbar.style.display = "flex";
+        }else{
+            smallNavbar.style.display = "none";
+        }
+    }
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            smallNavbar.style.display = "none";
+        }
+    });
+</script>
+
+
+
+
+<div class="sus-landing">
+    <h1>At MONTAGESERVICE  E&M, we believe that beautiful interiors can also be environmentally responsible.</h1>
+</div>
+
+<div class="sus-materials">
+    <h1> "We prioritize the use of eco-friendly materials such as reclaimed wood, recycled metal, and bamboo. These materials not only reduce waste but also bring unique textures and stories into your home."</h1>
+</div>
+
+<div class="sus-carbon">
+    <h1> "Our designs incorporate energy-efficient solutions such as LED lighting and energy-saving appliances. We also integrate smart home technology to optimize energy use and reduce your carbon footprint."</h1>
+</div>
+
+<div class="sus-waste">
+    <h1> "We strive to minimize waste by recycling construction materials, donating old furniture, and designing spaces that are built to last. Our goal is to reduce the environmental impact of each project from start to finish."</h1>
+</div>
+
+
+
+</body>
+</html>
