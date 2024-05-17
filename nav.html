@@ -10,25 +10,24 @@
 <!--Also initial scale metatag-->
 <!--DONT ADD UNTILL WHEN YOU'RE FINISHED WITH EVERYTHING ELSE!!-->
 
-
 <nav>
     <div class="navbar">
         <h3>MONTAGESERVICE E&M</h3>
         <img id="burgerMenu" src="images/burger_menu.png" onclick="toggleMenu()">
         <ul id="navbarUl">
             <a href="index.html">
-                <li>Products</li>
+                <li>Home</li>
             </a>
-            <a href="about.html">
+            <a href="index.html#landing-projects">
                 <li>Projects & Designs</li>
             </a>
-            <a href="contact.html">
+            <a href="sustainability.html">
                 <li>Sustainability</li>
             </a>
-            <a href="contact.html">
+            <a href="aboutus.html">
                 <li>About Us</li>
             </a>
-            <a href="contact.html" id="navButton">
+            <a href="index.html#contact-form" id="navButton">
                 <li>Build with us &#10140;</li>
             </a>
         </ul>
@@ -38,9 +37,9 @@
 <div class="smallNavbar">
     <ul>
         <a href="index.html">
-            <li>Products</li>
+            <li>Home</li>
         </a>
-        <a href="about.html">
+        <a href="index.html#landing-projects">
             <li>Projects & Designs</li>
         </a>
         <a href="contact.html">
@@ -49,11 +48,30 @@
         <a href="contact.html">
             <li>About Us</li>
         </a>
-        <a href="contact.html" id="navButton">
+        <a href="index.html#contact-form" id="navButton">
             <li>Build with us &#10140;</li>
         </a>
     </ul>
 </div>
+
+<script>
+    const smallNavbar = document.querySelector(".smallNavbar");
+    const burgerMenu = document.querySelector("#burgerMenu");
+
+    const toggleMenu = () =>{
+        if(smallNavbar.style.display === "none" || smallNavbar.style.display === ""){
+            smallNavbar.style.display = "flex";
+        }else{
+            smallNavbar.style.display = "none";
+        }
+    }
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            smallNavbar.style.display = "none";
+        }
+    });
+</script>
 
 </body>
 </html>
