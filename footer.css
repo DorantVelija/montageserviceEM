@@ -22,6 +22,9 @@ footer > p{
     flex-direction: column;
     justify-content: flex-start;
 }
+.footer-img{
+    justify-content: center !important;
+}
 .footer-container h1{
     text-align: left;
     color: #212121;
