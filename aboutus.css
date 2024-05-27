@@ -38,12 +38,13 @@
     color: #ffffff;
 }
 .block-blur{
-    filter: grayscale(0.8);
-    transition: 200ms;
+    transition: 500ms;
 }
 .block-blur:hover{
     filter: none;
     scale: 1;
+    background-size: 105%;
+    transition: 500ms;
 }
 
 @keyframes load {
@@ -78,18 +79,29 @@
 }
 .ourmission{
     background-image: url("images/close-up-hand-drawing-project.jpg");
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
+    transition: 500ms;
 }
 .ourvalues{
     background-image: url("images/man-surprising-woman-with-gift-living-room.jpg");
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
+    transition: 500ms;
 }
 .ourteam{
     background-image: url("images/engineers-front-wall.jpg");
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
+    transition: 500ms;
 }
 .blue{
-    background: linear-gradient(to right, #212121, #2f2f2f, #212121);
+    background: linear-gradient(to right, #212121, #252525, #212121);
+    transition: 200ms;
+}
+.blue:hover{
+    background: #181818;
+    transition: 200ms;
 }
 
 @media (max-width: 768px){
